@@ -1,0 +1,58 @@
+{
+	"economy_v1": {
+		"description": "Phase 2 economy balance — seed costs and rewards",
+		"seeds_per_run_avg": 15,
+		"seeds_per_meter": 0.03,
+		"seed_multiplier_per_level": 0.15,
+		"gem_sources": {
+			"quest_rewards": "2-5 per quest",
+			"daily_login": "1 per day",
+			"milestone_runs": "3 gems every 10 runs"
+		},
+		"buildings": {
+			"seed_house": {
+				"levels": [
+					{"level": 1, "cost": 50, "effect": "+15% seeds"},
+					{"level": 2, "cost": 90, "effect": "+30% seeds"},
+					{"level": 3, "cost": 162, "effect": "+45% seeds"},
+					{"level": 4, "cost": 292, "effect": "+60% seeds"},
+					{"level": 5, "cost": 525, "effect": "+75% seeds"}
+				]
+			},
+			"lantern": {
+				"levels": [
+					{"level": 1, "cost": 100, "effect": "Unlocks Crystal Caverns"},
+					{"level": 2, "cost": 250, "effect": "Unlocks Starlit Meadow"},
+					{"level": 3, "cost": 625, "effect": "All biomes palette variants"}
+				]
+			},
+			"workshop": {
+				"levels": [
+					{"level": 1, "cost": 75, "effect": "Start Shield"},
+					{"level": 2, "cost": 150, "effect": "+1s magnet duration"},
+					{"level": 3, "cost": 300, "effect": "+2s magnet duration"},
+					{"level": 4, "cost": 600, "effect": "+3s magnet duration"}
+				]
+			},
+			"decorations": {
+				"flower_bed": {"cost": 15},
+				"mushroom_ring": {"cost": 20},
+				"pond": {"cost": 30},
+				"stone_path": {"cost": 10},
+				"fairy_tree_lv1": {"cost": 60},
+				"fairy_tree_lv2": {"cost": 120},
+				"bench": {"cost": 12},
+				"crystal": {"cost": 25}
+			}
+		},
+		"design_notes": [
+			"A new player should be able to afford their first building (flower_bed or stone_path) within 1-2 runs",
+			"Seed House Lv1 should take ~3-4 runs to earn",
+			"Lantern Lv1 (first biome unlock) is a mid-term goal (~7 runs)",
+			"Workshop Lv1 (start shield) at ~5 runs",
+			"The seed multiplier stacks, so later buildings feel faster to earn",
+			"Gems are scarce — mainly from quests/daily — encouraging ad engagement on mobile",
+			"Decoration costs are low to give constant sense of progress"
+		]
+	}
+}
